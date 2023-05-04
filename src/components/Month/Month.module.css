@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@300&display=swap');
+
+.maincont{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    width: 100%;
+    background-color: #9a9a9a;
+    border-radius: 0.2em;
+    padding: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.active{
+    background-color: #ec721d;
+}
