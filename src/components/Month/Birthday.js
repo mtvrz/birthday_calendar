@@ -1,9 +1,9 @@
 import classes from "./Birthday.module.css"
 
-const Birthday = () =>{
+const Birthday = (props) =>{
     return <div className={classes.main}>
-<div className={classes.name}>Matějíček</div>
-        <div className={classes.date}>4.1.1999</div>
+<div className={classes.name}>{props.person.name}</div>
+        <div className={classes.date}>{props.person.date}</div>
     </div>
 }
 export default Birthday

@@ -16,7 +16,13 @@ const MainPage = () => {
     const [sorted, setSorted] = useState([])
     let y=0
 
+    const group_method = () =>{
+
+    }
     const sort_method = (x) =>{
+        // date: "01-04"
+        // interests: "-"
+        // name: ""
         setSorted([...sorted])
     }
     useEffect(() => {
@@ -33,23 +39,23 @@ const MainPage = () => {
         setdayNUM(date.getDate())
         setmonth(months[date.getMonth()])
 console.log(birthdayss)
-birthdayss.map(x=>{
-setSorted([...sorted,])
-    const sep = x.date.split("-")
-    sort_method(sep)
-    if(formatedDate.includes(x.date)){
-        if (temCond ===true){
-            temName = `${temName} a ${x.name}`
-            setOsravenec(temName)
+birthdayss.map(y=>{
+    y.map(x=>{
+        setSorted([...sorted,])
+        sort_method(x)
+        if(formatedDate.includes(x.date)){
+            if (temCond ===true){
+                temName = `${temName} a ${x.name}`
+                setOsravenec(temName)
+            }
+            if (temCond ===false){
+                temName = x.name
+                temCond = true
+                setOsravenec(temName)
+            }
+            setIsTheDay(true)
         }
-        if (temCond ===false){
-            temName = x.name
-            temCond = true
-            setOsravenec(temName)
-        }
-        setIsTheDay(true)
-
-    }
+    })
 })
     }, [])
 
