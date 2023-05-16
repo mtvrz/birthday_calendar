@@ -20,7 +20,7 @@ useEffect(()=>{
             {birthdayss[props.index-1].map((x) =>{
                 return <Birthday key={x.name} person={x}/>
             })}
-
+            {birthdayss[props.index-1].length === 0 && <div className={classes.empty}>:o</div>}
 
         </div>
     </div>

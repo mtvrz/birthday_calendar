@@ -8,11 +8,12 @@
 }
 .header{
     width: 100%;
-    background-color: #9a9a9a;
+    background-color: rgba(147, 143, 152, 0.45);
     border-radius: 0.2em;
     padding: 5px;
     font-weight: bold;
     font-size: small;
+    margin-bottom: 5px;
 }
 .body{
     display: flex;
@@ -23,5 +24,10 @@
     gap: 5px;
 }
 .active{
-    background-color: #ec721d;
+    /*background-color: #ec721d;*/
+    background-color: #ecc31d;
+}
+.empty{
+    padding-top: 40px;
+    color: #dddddd;
 }

@@ -9,11 +9,17 @@ display: flex;
     padding: 2px;
     font-family: 'Open Sans', sans-serif;
     color: #dddddd;
+    border-radius: 0.4em;
 }
 .name{
     position: relative;
 }
 .date{
     position: relative;
+    font-weight: bold;
+}
+.active{
+    background-color: #ecc31d;
+    color: #000000;
     font-weight: bold;
 }
