@@ -39,7 +39,7 @@ export const birthdayss = [
         {
             date: "03-13",
             shortDate: "13.",
-            name: "Martin Miklánek",
+            name: "M-M",
             interests: "fitness, muzea, PC's"
         }],
     [{
@@ -60,10 +60,10 @@ export const birthdayss = [
         name: "Glebík",
         interests: "-"
     },{
-        date: "05-06",
-        shortDate: "5.",
-        name: "Narozeninák",
-        interests: "-"
+        date: "05-16",
+        shortDate: "16.",
+        name: "Random cápek",
+        interests: "LISA2 :)))"
     }],
     [{
         date: "06-03",
@@ -86,7 +86,7 @@ export const birthdayss = [
     [{
         date: "07-21",
         shortDate: "21.",
-        name: "Petr Slavíček",
+        name: "Petr S.",
         interests: "-"
     },
         {

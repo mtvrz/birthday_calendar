@@ -1,5 +1,6 @@
 import classes from "./Birthday.module.css"
 import {useEffect, useState} from "react";
+import {Tooltip} from "@mui/material";
 
 const Birthday = (props) =>{
     const [oj, setOj] = useState(false)
@@ -13,9 +14,11 @@ const Birthday = (props) =>{
         formatedDate.includes(props.person.date) && setOj(true)
     },[])
 
-    return <div className={`${classes.main} ${oj && classes.active}`}>
+    return <Tooltip title={props.person.interests} arrow placement="bottom-start">
+    <div className={`${classes.main} ${oj && classes.active}`}>
 <div className={`${classes.name} ${oj && classes.active}`}>{props.person.name}</div>
         <div className={`${classes.date} ${oj && classes.active}`}>{props.person.shortDate}</div>
     </div>
+    </Tooltip>
 }
 export default Birthday
