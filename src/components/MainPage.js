@@ -2,6 +2,7 @@ import classes from "./MainPage.module.css";
 import {useEffect, useState} from "react";
 import {birthdayss} from "../components/bh"
 import Month from "./Month/Month";
+import {Zoom} from "@mui/material";
 
 const MainPage = () => {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
