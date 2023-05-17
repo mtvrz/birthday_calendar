@@ -59,11 +59,6 @@ export const birthdayss = [
         shortDate: "3.",
         name: "Glebík",
         interests: "-"
-    },{
-        date: "05-16",
-        shortDate: "16.",
-        name: "Random cápek",
-        interests: "LISA2 :)))"
     }],
     [{
         date: "06-03",
